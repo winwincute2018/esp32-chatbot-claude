@@ -1,0 +1,13 @@
+{
+    "type": "aio28-modern",
+    "target": "esp32s3",
+    "builds": [
+        {
+            "name": "aio28-modern",
+            "sdkconfig_append": [
+                "CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y",
+                "CONFIG_PARTITION_TABLE_CUSTOM_FILENAME=\"partitions/v2/16m.csv\""
+            ]
+        }
+    ]
+}
